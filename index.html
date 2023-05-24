@@ -5,190 +5,353 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e8e3ab265.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header" id="header">
-      <div class="header__presentation">
-        <p class="header__greeting">
-          Hola! <br />
-          Soy Iván Camilo y bienvenido a mi . . .
-        </p>
-        <h1 class="header__title">PORTAFOLIO</h1>
+    <nav class="nav">
+      <div class="nav__content">
+        <h1 class="nav__heading">
+          <a href="#header" class="nav__heading-link closer">Portafolio</a>
+        </h1>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link closer" href="#tools">Herramientas</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link closer" href="#challenge">
+              Retos Frontend Mentor
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link closer" href="#game">Juegos</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link closer" href="#social">Redes</a>
+          </li>
+        </ul>
+        <button class="nav__bars-btn" type="button" onclick="ToggleMenu()">
+          <i class="nav__bars-icon fa-solid fa-bars" id="menu-icon"></i>
+        </button>
       </div>
-      <div class="header__text">
-        Soy ingeniero multimedia, diseñador web y desarrollador front-end
-        junior. Me encantan las experiencias interactivas y digitales. Esperoque
-        disfrutes de este sitio.
-      </div>
-    </header>
-    <nav class="navigation">
-      <ul>
-        <li><a href="#header">Inicio</a></li>
-        <li><a href="#tools">Herramientas</a></li>
-        <li><a href="#challenge">Retos Front Mentor</a></li>
-        <li><a href="#contact">Juegos</a></li>
-      </ul>
     </nav>
-    <section class="tools" id="tools">
-      <h1 class="title">Herramientas</h1>
-      <p class="description">
-        Estas son algunas de las herramientas de software y lenguajes de
-        programación que utilizo.
-      </p>
-      <div class="tools-icons">
-        <figure class="tool-icon">
-          <img
-            title="HTML5"
-            src="./img/HTML5.png"
-            alt="HTML5"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">HTML</figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="CSS3"
-            src="./img/CSS3.svg"
-            alt="CSS3"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">CSS</figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="JavaScript"
-            src="./img/JavaScript.svg"
-            alt="JavaScript"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">JavaScript</figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="Visual Studio Code"
-            src="./img/Visual Studio Code.svg"
-            alt="Visual Studio Code"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">VS Code</figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="Git"
-            src="./img/Git.svg"
-            alt="Git"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">Git</figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="Figma"
-            src="./img/Figma.svg"
-            alt="Figma"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">Figma</figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="Adobe Photoshop"
-            src="./img/Photoshop.svg"
-            alt="Photoshop"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">Photoshop</figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="Adobe Illustrator"
-            src="./img/Illustrator.svg"
-            alt="Illustrator"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">Illustrator</figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="Substance painter"
-            src="./img/Substance 3d painter.png"
-            alt="Substance painter"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">
-            Substance <br />
-            Painter
-          </figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="Maya"
-            src="./img/Maya.png"
-            alt="Maya"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">Maya</figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="Blender"
-            src="./img/Blender.png"
-            alt="Blender"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">Blender</figcaption>
-        </figure>
-        <figure class="tool-icon">
-          <img
-            title="Unity"
-            src="./img/Unity.png"
-            alt="Unity"
-            class="tool-icon__img"
-            height="64"
-            width="auto"
-          />
-          <figcaption class="tool-icon__caption">Unity</figcaption>
-        </figure>
-      </div>
-    </section>
-    <section class="challenge" id="challenge">
-      <h1 class="title">Retos Front Mentor</h1>
-      <p class="description">
-        Mira algunos de los retos que realizado en la plataforma Front Mentor.
-      </p>
-      <div class="collage">
-        <img class="collage__bg" src="./img/Desktop.png" alt="" />
-        <img class="collage__img" src="./img/Mobile.png" alt="" />
-      </div>
-    </section>
+
+    <main class="container closer" onclick="">
+      <header class="header" id="header">
+        <h1 class="header__presentation">
+          ¡Hola, soy <br /><span class="header__name">Iván Camilo!</span>
+        </h1>
+        <h2 class="header__formation">
+          Ingeniero multimedia, diseñador web y desarrollador front-end
+        </h2>
+        <p class="header__message">
+          Me encantan las experiencias interactivas y digitales. Espero que
+          disfrutes de este sitio.
+        </p>
+        <img
+          class="header__arrow"
+          src="img/arrow_down.gif"
+          alt="Desplaza hcea abajo"
+        />
+      </header>
+      <section class="section section--horizontal" id="tools">
+        <div class="section__info">
+          <h1 class="section__title">
+            <span class="section__title-deco section__title-deco--theme1">
+              Herramientas
+            </span>
+          </h1>
+          <p class="section__description">
+            Estas son algunas de las herramientas de software y lenguajes de
+            programación que utilizo.
+          </p>
+        </div>
+
+        <div class="icon-grid">
+          <div class="icon-grid__item">
+            <img
+              title="HTML5"
+              src="./img/html5.svg"
+              alt="HTML5"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">HTML</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="CSS3"
+              src="./img/css3.svg"
+              alt="CSS3"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">CSS</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="JavaScript"
+              src="./img/javaScript.svg"
+              alt="JavaScript"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">JavaScript</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="Visual Studio Code"
+              src="./img/visual_studio_code.svg"
+              alt="Visual Studio Code"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">VS Code</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="Git"
+              src="./img/git_2.svg"
+              alt="Git"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">Git</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="Wordpress"
+              src="./img/wordpress.svg"
+              alt="Wordpress"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">WordPress</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="Figma"
+              src="./img/figma.svg"
+              alt="Figma"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">Figma</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="Adobe Photoshop"
+              src="./img/photoshop.svg"
+              alt="Photoshop"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">Photoshop</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="Adobe Illustrator"
+              src="./img/illustrator.svg"
+              alt="Illustrator"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">Illustrator</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="Substance painter"
+              src="./img/substance.svg"
+              alt="Substance painter"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">Substance 3D</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="Maya"
+              src="./img/maya.svg"
+              alt="Maya"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">Maya</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="Blender"
+              src="./img/blender.svg"
+              alt="Blender"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">Blender</p>
+          </div>
+          <div class="icon-grid__item">
+            <img
+              title="Unity"
+              src="./img/unity.svg"
+              alt="Unity"
+              class="icon-grid__img"
+            />
+            <p class="icon-grid__caption">Unity</p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="challenge">
+        <div class="section__info">
+          <h1 class="section__title">
+            <span class="section__title-deco section__title-deco--theme2">
+              Retos Front Mentor
+            </span>
+          </h1>
+          <p class="section__description">
+            Mira algunos de los retos que realizado en la plataforma Front
+            Mentor.
+          </p>
+        </div>
+        <div class="section__content">
+          <div class="card">
+            <img class="card__img" alt="" src="img/coming_soon.png" />
+            <div class="card__content">
+              <h2 class="card__title">Coming Sooon Page</h2>
+              <p class="card__tags">
+                <span class="card__tag card__tag--color2">HTML </span>
+                <span class="card__tag card__tag--color4">CSS </span>
+                <span class="card__tag card__tag--color1">JS </span>
+              </p>
+              <hr class="card__separator" />
+              <div class="card__buttons">
+                <button
+                  class="card__button card__button--theme2"
+                  onclick="location.href='https://comet-hub.github.io/coming_soon_page/';"
+                >
+                  <p class="card__button-txt card__button-txt--theme2">
+                    Página
+                  </p>
+                </button>
+                <button
+                  class="card__button card__button--theme2"
+                  onclick="location.href='https://github.com/Comet-hub/coming_soon_page';"
+                >
+                  <p class="card__button-txt card__button-txt--theme2">
+                    Código
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card__img"
+              alt=""
+              src="img/interactive_rating_component.png"
+            />
+            <div class="card__content">
+              <h2 class="card__title">Interactive Rating Component</h2>
+              <p class="card__tags">
+                <span class="card__tag card__tag--color2">HTML </span>
+                <span class="card__tag card__tag--color4">CSS </span>
+                <span class="card__tag card__tag--color1">JS </span>
+              </p>
+              <hr class="card__separator" />
+              <div class="card__buttons">
+                <button
+                  class="card__button card__button--theme2"
+                  onclick="location.href='https://comet-hub.github.io/interactive_rating_component/';"
+                >
+                  <p class="card__button-txt card__button-txt--theme2">
+                    Página
+                  </p>
+                </button>
+                <button
+                  class="card__button card__button--theme2"
+                  onclick="location.href='https://github.com/Comet-hub/interactive_rating_component';"
+                >
+                  <p class="card__button-txt card__button-txt--theme2">
+                    Código
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="game">
+        <div class="section__info">
+          <h1 class="section__title">
+            <span class="section__title-deco section__title-deco--theme3">
+              Juegos
+            </span>
+          </h1>
+          <p class="section__description">Mira algunos juegos que he hecho.</p>
+        </div>
+        <div class="section__content">
+          <div class="card">
+            <img src="img/labyrinth.png" alt="" class="card__img" />
+            <div class="card__content">
+              <h2 class="card__title">Labyrinth</h2>
+              <p class="card__p">
+                Lleva la bola metálica hasta la meta a través del laberinto. Ten
+                cuidado con los hoyos trampa.
+              </p>
+              <div class="card__buttons">
+                <button
+                  class="card__button card__button--theme3"
+                  onclick="location.href='https://comet-hub.github.io/Labyrinth/';"
+                >
+                  <p class="card__button-txt card__button-txt--theme3">Jugar</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/spaceship.png" alt="" class="card__img" />
+            <div class="card__content">
+              <h2 class="card__title">Spaceship</h2>
+              <p class="card__p">
+                Esquiva los asteroides para obtener el máximo puntaje posible.
+                Recuerda recargar tu energía con las nebulosas que encuentres en
+                el camino.
+              </p>
+              <div class="card__buttons">
+                <button
+                  class="card__button card__button--theme3"
+                  onclick="location.href='https://comet-hub.github.io/Spaceship/';"
+                >
+                  <p class="card__button-txt card__button-txt--theme3">Jugar</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--horizontal" id="social">
+        <div class="section__info">
+          <h1 class="section__title">
+            <span class="section__title-deco section__title-deco--theme4">
+              Redes
+            </span>
+          </h1>
+        </div>
+        <div class="section__content">
+          <div class="social__links">
+            <a href="https://github.com/Comet-hub" class="social__link">
+              <i class="fa-brands fa-github socialIcon"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/camilo-castellanos-icc"
+              class="social__link"
+            >
+              <i class="fa-brands fa-linkedin socialIcon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
