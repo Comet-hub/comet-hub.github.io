@@ -1,9 +1,9 @@
 :root {
-  --acrylic: hsla(240, 8%, 10%, 0.5);
+  --acrylic: hsla(0, 0%, 10%, 0.5);
   --white: hsl(0, 0%, 100%);
   --grey: hsl(233, 14%, 75%);
-  --backgroud-page: hsl(240, 8%, 10%);
-  --card-color: hsl(240, 7%, 16%);
+  --backgroud-page: hsl(0, 0%, 10%);
+  --card-color: hsl(0, 0%, 15%);
   --color-1: hsl(47, 100%, 50%);
   --color-2: hsl(24, 100%, 50%);
   --color-3: hsl(281, 100%, 50%);
@@ -31,8 +31,8 @@ body {
 }
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .nav {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
   }
 }
 .nav__content {
@@ -334,13 +334,13 @@ body {
     font-weight: 500;
   }
   .header__name {
-    font-size: 8rem;
+    font-size: 12rem;
   }
   .header__formation {
-    font-size: 2.75em;
+    font-size: 2.25em;
   }
   .header__message {
-    font-size: 2.25em;
+    font-size: 2em;
   }
   .header__arrow {
     width: 100px;
