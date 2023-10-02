@@ -9,11 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <script
@@ -26,47 +22,103 @@
     <nav class="nav">
       <div class="nav__content">
         <h1 class="nav__heading">
-          <a href="#header" class="nav__heading-link closer">Portafolio</a>
+          <a href="#header" class="nav__heading-link active-link closer" id="header-link">
+            <span class="nav__link-deco nav__link-deco--active"></span>
+            Portafolio
+          </a>
         </h1>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link closer" href="#tools">Herramientas</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link closer" href="#challenge">
-              Retos Frontend Mentor
+            <a class="nav__link closer" id="tools-link" href="#tools">
+              <span class="nav__link-deco"></span>
+              Herramientas
             </a>
           </li>
+          <hr class="nav__separator" />
           <li class="nav__item">
-            <a class="nav__link closer" href="#game">Juegos</a>
+            <a class="nav__link closer" id="challenge-link" href="#challenge">
+              <span class="nav__link-deco"></span>
+              Retos Front-end
+            </a>
           </li>
+          <hr class="nav__separator" />
           <li class="nav__item">
-            <a class="nav__link closer" href="#social">Redes</a>
+            <a class="nav__link closer" id="game-link" href="#game">
+              <span class="nav__link-deco"></span>
+              Juegos
+            </a>
           </li>
         </ul>
-        <button class="nav__bars-btn" type="button" onclick="ToggleMenu()">
+        <button id="menu-toggle" class="nav__bars-btn" type="button">
           <i class="nav__bars-icon fa-solid fa-bars" id="menu-icon"></i>
         </button>
       </div>
     </nav>
 
     <main class="container closer" onclick="">
-      <header class="header" id="header">
-        <h1 class="header__presentation">
-          ¡Hola, soy <br /><span class="header__name">Iván Camilo!</span>
-        </h1>
-        <h2 class="header__formation">
-          Ingeniero multimedia, desarrollador front-end y diseñador web
-        </h2>
-        <p class="header__message">
-          Me encantan las experiencias interactivas y digitales. Espero que
-          disfrutes de este sitio.
-        </p>
-        <img
-          class="header__arrow"
-          src="img/arrow_down.gif"
-          alt="Desplaza hcea abajo"
-        />
+      <header class="section" id="header">
+        <div class="header__content">
+          <h1 class="header__presentation">
+            ¡Hola, soy <br /><span class="header__name">Iván Camilo!</span>
+          </h1>
+          <div class="header__social">
+            <a
+              href="https://github.com/Comet-hub"
+              class="header__social-link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                src="img/github.svg"
+                alt="GitHub"
+                class="header__social-icon"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/camilo-castellanos-icc"
+              class="header__social-link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                src="img/linkedin.svg"
+                alt="GitHub"
+                class="header__social-icon"
+              />
+            </a>
+          </div>
+
+          <div class="header__formation">
+            <h1 class="header__formation-title" id="formation_1">
+              Ingeniero
+              <br />
+              <span class="header__emphasis header__emphasis--theme1"
+                >Multimedia</span
+              >
+            </h1>
+            <h1 class="header__formation-title" id="formation_2">
+              Desarrollador
+              <br />
+              <span class="header__emphasis header__emphasis--theme2"
+                >Front-end</span
+              >
+            </h1>
+            <h1 class="header__formation-title" id="formation_3">
+              Diseñador
+              <br />
+              <span class="header__emphasis header__emphasis--theme3">Web</span>
+            </h1>
+          </div>
+          <p class="header__message">
+            Me encantan las experiencias interactivas y digitales. Espero que
+            disfrutes de este sitio.
+          </p>
+          <!-- <img
+            class="header__arrow"
+            src="img/arrow_down.gif"
+            alt="Desplaza hcea abajo"
+          /> -->
+        </div>
       </header>
       <section class="section section--horizontal" id="tools">
         <div class="section__info">
@@ -205,7 +257,7 @@
         <div class="section__info">
           <h1 class="section__title">
             <span class="section__title-deco section__title-deco--theme2">
-              Retos Front Mentor
+              Retos Front-end
             </span>
           </h1>
           <p class="section__description">
@@ -219,15 +271,15 @@
             <div class="card__content">
               <h2 class="card__title">Coming Sooon Page</h2>
               <p class="card__tags">
-                <span class="card__tag card__tag--color2">HTML </span>
-                <span class="card__tag card__tag--color4">CSS </span>
-                <span class="card__tag card__tag--color1">JS </span>
+                <span class="card__tag">HTML</span>
+                <span class="card__tag">CSS</span>
+                <span class="card__tag">JavaScript</span>
               </p>
               <hr class="card__separator" />
               <div class="card__buttons">
                 <button
                   class="card__button card__button--theme2"
-                  onclick="location.href='https://comet-hub.github.io/coming_soon_page/';"
+                  onclick="window.open('https://comet-hub.github.io/coming_soon_page/', '_blank');"
                 >
                   <p class="card__button-txt card__button-txt--theme2">
                     Página
@@ -235,7 +287,7 @@
                 </button>
                 <button
                   class="card__button card__button--theme2"
-                  onclick="location.href='https://github.com/Comet-hub/coming_soon_page';"
+                  onclick="window.open('https://github.com/Comet-hub/coming_soon_page', '_blank');"
                 >
                   <p class="card__button-txt card__button-txt--theme2">
                     Código
@@ -253,15 +305,15 @@
             <div class="card__content">
               <h2 class="card__title">Interactive Rating Component</h2>
               <p class="card__tags">
-                <span class="card__tag card__tag--color2">HTML </span>
-                <span class="card__tag card__tag--color4">CSS </span>
-                <span class="card__tag card__tag--color1">JS </span>
+                <span class="card__tag">HTML</span>
+                <span class="card__tag">CSS</span>
+                <span class="card__tag">JavaScript</span>
               </p>
               <hr class="card__separator" />
               <div class="card__buttons">
                 <button
                   class="card__button card__button--theme2"
-                  onclick="location.href='https://comet-hub.github.io/interactive_rating_component/';"
+                  onclick="window.open('https://comet-hub.github.io/interactive_rating_component/', '_blank');"
                 >
                   <p class="card__button-txt card__button-txt--theme2">
                     Página
@@ -269,7 +321,7 @@
                 </button>
                 <button
                   class="card__button card__button--theme2"
-                  onclick="location.href='https://github.com/Comet-hub/interactive_rating_component';"
+                  onclick="window.open('https://github.com/Comet-hub/interactive_rating_component', '_blank');"
                 >
                   <p class="card__button-txt card__button-txt--theme2">
                     Código
@@ -301,7 +353,7 @@
               <div class="card__buttons">
                 <button
                   class="card__button card__button--theme3"
-                  onclick="location.href='https://comet-hub.github.io/Labyrinth/';"
+                  onclick="window.location.href='https://comet-hub.github.io/Labyrinth/';"
                 >
                   <p class="card__button-txt card__button-txt--theme3">Jugar</p>
                 </button>
@@ -320,7 +372,7 @@
               <div class="card__buttons">
                 <button
                   class="card__button card__button--theme3"
-                  onclick="location.href='https://comet-hub.github.io/Spaceship/';"
+                  onclick="window.location.href='https://comet-hub.github.io/Spaceship/';"
                 >
                   <p class="card__button-txt card__button-txt--theme3">Jugar</p>
                 </button>
@@ -329,29 +381,6 @@
           </div>
         </div>
       </section>
-      <section class="section section--horizontal" id="social">
-        <div class="section__info">
-          <h1 class="section__title">
-            <span class="section__title-deco section__title-deco--theme4">
-              Redes
-            </span>
-          </h1>
-        </div>
-        <div class="section__content">
-          <div class="social__links">
-            <a href="https://github.com/Comet-hub" class="social__link">
-              <i class="fa-brands fa-github socialIcon"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/camilo-castellanos-icc"
-              class="social__link"
-            >
-              <i class="fa-brands fa-linkedin socialIcon"></i>
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
-    <script src="js/script.js"></script>
-  </body>
+    <script type="module" src="js/script.js"></script>
 </html>
