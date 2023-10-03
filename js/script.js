@@ -25,24 +25,18 @@ menuButtom.addEventListener("click", toggleMenu);
 
 const sections = document.querySelectorAll(".section");
 
-document.addEventListener(
-  "scroll",
-  () => {
-    sections.forEach((section) => {
-      const navLink = document.querySelector(`#${section.id}-link`);
-      const navLinkDeco = document.querySelector(
-        `#${section.id}-link > .nav__link-deco`
-      );
-      if (isInViewport(section)) {
-        navLink.classList.add("active-link");
-        navLinkDeco.classList.add("nav__link-deco--active");
-      } else {
-        navLink.classList.remove("active-link");
-        navLinkDeco.classList.remove("nav__link-deco--active");
-      }
-    });
-  },
-  {
-    passive: true,
-  }
-);
+document.addEventListener("scroll", () => {
+  sections.forEach((section) => {
+    const navLink = document.querySelector(`#${section.id}-link`);
+    const navLinkDeco = document.querySelector(
+      `#${section.id}-link > .nav__link-deco`
+    );
+    if (isInViewport(section)) {
+      navLink.classList.add("active-link");
+      navLinkDeco.classList.add("nav__link-deco--active");
+    } else {
+      navLink.classList.remove("active-link");
+      navLinkDeco.classList.remove("nav__link-deco--active");
+    }
+  });
+});
