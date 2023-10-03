@@ -46,10 +46,8 @@
 body {
   margin: 0;
   color: var(--white);
-  background-image: radial-gradient(circle, hsl(0, 0%, 10%), hsl(0, 0%, 6%));
-  background-attachment: fixed;
 }
-/* body:before {
+body:before {
   content: "";
   display: block;
   position: fixed;
@@ -64,7 +62,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} */
+}
 .nav {
   margin: 0;
   padding: 0;
