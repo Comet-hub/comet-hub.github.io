@@ -1,0 +1,18 @@
+@layer reset, base, tokens, recipes, utilities;
+:root {
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1; /* fix for Chrome */
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: black;
+  color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
