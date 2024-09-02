@@ -287,8 +287,8 @@ const App = () => {
             tags={["HTML", "CSS", "JavaScript", "React"]}
             code="https://github.com/Comet-hub/interactive-card-details-form"
             page="https://comet-hub.github.io/interactive-card-details-form/"
-            imgUrl="/interactive-card-details-form-desktop.png"
-            imgUrlMobile="/interactive-card-details-form-mobile.png"
+            imgUrl="/interactive-card-details-form-desktop.webp"
+            imgUrlMobile="/interactive-card-details-form-mobile.webp"
             isReverse
           >
             Este proyecto fue desarrollado con HTML, CSS, JavaScript y React.
@@ -304,8 +304,8 @@ const App = () => {
             tags={["HTML", "CSS", "JavaScript"]}
             code="https://github.com/Comet-hub/coming_soon_page"
             page="https://comet-hub.github.io/coming_soon_page/"
-            imgUrl="/coming-soon-page-desktop.png"
-            imgUrlMobile="/coming-soon-page-mobile.png"
+            imgUrl="/coming-soon-page-desktop.webp"
+            imgUrlMobile="/coming-soon-page-mobile.webp"
           >
             Este proyecto fue desarrollado con HTML, CSS y JavaScript. Consistió
             en la creación de una página web que anuncia la apertura de una
@@ -319,8 +319,8 @@ const App = () => {
             tags={["HTML", "CSS", "JavaScript"]}
             code="https://github.com/Comet-hub/interactive_rating_component"
             page="https://comet-hub.github.io/interactive_rating_component/"
-            imgUrl="/interactive-rating-component-desktop.png"
-            imgUrlMobile="/interactive-rating-component-mobile.png"
+            imgUrl="/interactive-rating-component-desktop.webp"
+            imgUrlMobile="/interactive-rating-component-mobile.webp"
             isReverse
           >
             Este proyecto fue desarrollado con HTML, CSS y JavaScript. Consistió
