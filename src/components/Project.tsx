@@ -287,12 +287,12 @@ const Project: React.FC<ProjectProps> = ({
 
         {type === "web" && (
           <div className={css(projectLinksCss)}>
-            <Link className={css(primaryLinkCss)} href={page} target="_blank">
-              Ver página
-            </Link>
-
             <Link className={css(secondaryLinkCss)} href={code} target="_blank">
               Ver Código
+            </Link>
+
+            <Link className={css(primaryLinkCss)} href={page} target="_blank">
+              Ver página
             </Link>
           </div>
         )}
